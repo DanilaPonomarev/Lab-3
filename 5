@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c=0;
+    scanf("%d", &b);
+    a=b*b;
+    printf("%d\n",a);
+    while(b>0)
+    {
+        c=c+b%10;
+        b=b/10;
+        printf("%d %d ",c,b);
+    }
+    if(c*c*c==a)
+        printf("Верно");
+    else
+        printf("Неверно");
+}
